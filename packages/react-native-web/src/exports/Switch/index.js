@@ -33,7 +33,7 @@ const thumbDefaultBoxShadow = '0px 1px 3px rgba(0,0,0,0.5)';
 const thumbFocusedBoxShadow = `${thumbDefaultBoxShadow}, 0 0 0 10px rgba(0,0,0,0.1)`;
 
 const Switch = forwardRef<SwitchProps, *>((props, forwardedRef) => {
-  const {
+  let {
     accessibilityLabel,
     activeThumbColor = '#009688',
     activeTrackColor = '#A3D3CF',
